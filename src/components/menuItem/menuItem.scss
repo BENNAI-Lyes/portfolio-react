@@ -1,0 +1,12 @@
+li {
+  a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  &:hover {
+    font-weight: 500;
+  }
+}
