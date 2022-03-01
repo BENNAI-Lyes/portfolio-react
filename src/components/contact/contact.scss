@@ -1,0 +1,58 @@
+@import "../../main.scss";
+
+.contact {
+  display: flex;
+
+  .left {
+    flex: 0.5;
+
+    .img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+  .right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      input {
+        padding: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        padding: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        padding: 10px;
+        color: #fff;
+        background-color: $secondaryColor;
+        border: none;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@import "../../main.scss";
+
+.works {
+  background-color: $secondaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    animation: blink 0.4s infinite;
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+
+    &.right {
+      right: 100px;
+    }
+    @keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .slide {
+        width: 750px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .iconContainer {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: rgb(120, 133, 192);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: 30px;
+              }
+            }
+            .title {
+              font-size: 20px;
+              color: $mainColor;
+            }
+            .desc {
+              font-size: 13px;
+              line-height: 1.5;
+            }
+            .projects {
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: 400px;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../main.scss";
+
+.portfolioFeature {
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  &.active {
+    background-color: $mainColor;
+    color: #fff;
+  }
+  &:hover {
+    font-weight: inherit;
+  }
+}
