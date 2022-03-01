@@ -2,6 +2,9 @@
 
 .intro {
   display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
   .left {
     flex: 0.5;
     .wrapper {
@@ -31,13 +34,25 @@
       gap: 30px;
       h1 {
         font-size: 60px;
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
+        @include mobile {
+          font-size: 25px;
+        }
       }
       h3 {
         font-size: 30px;
+        @include mobile {
+          font-size: 20px;
+        }
         span {
+          @include mobile {
+            font-size: 18px;
+          }
           font-size: 28px;
           color: $secondaryColor;
         }

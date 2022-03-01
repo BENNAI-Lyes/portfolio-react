@@ -25,6 +25,9 @@
         opacity: 0;
       }
     }
+    @include mobile {
+      display: none;
+    }
   }
 
   .slider {
@@ -33,6 +36,12 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    @include mobile {
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 
     .container {
       width: 100vw;
@@ -49,6 +58,11 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+          height: 170px;
+          width: 450px;
+        }
+
         .left {
           flex: 4;
           height: 80%;
@@ -56,12 +70,23 @@
           align-items: center;
           justify-content: center;
 
+          @include mobile {
+            flex: 7;
+            height: 100%;
+            align-items: flex-start;
+          }
+
           .leftContainer {
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mobile {
+              width: 95%;
+              height: 95%;
+            }
 
             .iconContainer {
               width: 50px;
@@ -99,10 +124,16 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          @include mobile {
+            flex: 5;
+          }
 
           img {
             width: 400px;
             transform: rotate(-10deg);
+            @include mobile {
+              width: 160px;
+            }
           }
         }
       }
