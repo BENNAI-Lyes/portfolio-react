@@ -7,7 +7,7 @@ export default function Topbar({ isTopbarActive, setIsTopbarActive }) {
       <div className="wrapper ">
         <div className="left">
           <a className="logo" href="#intro">
-            genies.
+            <img src="assets/logo-dark.png" alt="" />
           </a>
           <div className="itemContainer">
             <Person className="icon" />
@@ -19,6 +19,9 @@ export default function Topbar({ isTopbarActive, setIsTopbarActive }) {
           </div>
         </div>
         <div className="right">
+          <a href="#contact" className="hireMe">
+            Hire Me
+          </a>
           <div
             className="hamburger "
             onClick={() => setIsTopbarActive(!isTopbarActive)}

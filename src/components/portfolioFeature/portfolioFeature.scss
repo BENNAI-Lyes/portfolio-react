@@ -1,8 +1,14 @@
 @import "../../main.scss";
 
 .portfolioFeature {
-  padding: 8px 15px;
-  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-weight: 500;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   text-transform: capitalize;
   &.active {
@@ -11,5 +17,6 @@
   }
   &:hover {
     font-weight: inherit;
+    font-size: inherit;
   }
 }

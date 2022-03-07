@@ -4,7 +4,7 @@
   height: 70px;
   width: 100%;
   background-color: #fff;
-  color: $mainColor;
+  color: $textColor;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -14,18 +14,20 @@
   .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     .left {
       display: flex;
       align-items: center;
+      flex: 0.5;
 
       .logo {
-        font-size: 40px;
-        font-weight: 700;
-        color: inherit;
-        text-decoration: none;
-        margin-right: 30px;
+        margin: 0 30px;
+
+        img {
+          width: 80px;
+          // height: 30px;
+          object-fit: cover;
+        }
       }
       .itemContainer {
         @include mobile {
@@ -45,6 +47,30 @@
     }
 
     .right {
+      flex: 0.5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .hireMe {
+        margin-left: 20px;
+        padding: 10px 15px;
+        color: $textColor;
+        background-color: #fff;
+        border: 2px solid $mainColor;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.5s ease;
+        text-decoration: none;
+        &:hover {
+          background-color: $mainColor;
+          color: #fff;
+          // border-color: #fff;
+        }
+      }
+
       .hamburger {
         width: 32px;
         height: 24px;
@@ -57,7 +83,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: $textColor;
           transform-origin: left;
           transition: all 1s ease;
         }
@@ -65,12 +91,12 @@
     }
   }
   &.active {
-    background-color: $mainColor;
-    color: #fff;
+    // background-color: $mainColor;
+    // color: #fff;
     .right {
       .hamburger {
         span {
-          background-color: #fff;
+          // background-color: #fff;
 
           &:first-child {
             transform: rotate(45deg);

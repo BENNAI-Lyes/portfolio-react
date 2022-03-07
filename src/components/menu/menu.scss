@@ -2,10 +2,10 @@
 
 .menu {
   height: 100vh;
-  width: 300px;
+  width: 250px;
   position: fixed;
-  right: -300px;
-  background-color: $mainColor;
+  right: -250px;
+  background-color: $textColor;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 25px;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 600;
     width: 70%;
   }
   &.active {

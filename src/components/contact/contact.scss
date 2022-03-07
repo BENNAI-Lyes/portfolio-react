@@ -2,6 +2,7 @@
 
 .contact {
   display: flex;
+  color: $textColor;
   @include mobile {
     flex-direction: column;
   }
@@ -68,7 +69,7 @@
       button {
         padding: 10px;
         color: #fff;
-        background-color: $secondaryColor;
+        background-color: $mainColor;
         border: none;
         font-size: 17px;
         font-weight: 500;

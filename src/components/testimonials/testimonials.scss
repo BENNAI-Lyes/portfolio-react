@@ -6,14 +6,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+  color: $textColor;
+
   @include mobile {
     gap: 10px;
   }
 
   h1 {
-    font-size: 35px;
-    color: $mainColor;
+    font-size: 30px;
+    color: $textColor;
     @include mobile {
       font-size: 20px;
     }
